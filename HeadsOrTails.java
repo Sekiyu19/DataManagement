@@ -2,6 +2,11 @@ import java.util.Scanner;
 import java.util.Random;
 public class HeadsOrTails{
     public static void main(String[] args) {
+		System.out.println("Who are you?");
+		Scanner sc = new Scanner(System.in);
+		String name = sc.next();
+        System.out.println("> " + name);
+		System.out.println("Hello, " + name + "!");
 		Random rand = new Random();
 		BodyParts[] bodyParts = new BodyParts[3];
 		for (int i = 0; i < bodyParts.length; i++){
