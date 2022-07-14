@@ -9,6 +9,11 @@ public class HeadsOrTails{
 			System.out.println("Round "  + (i + 1) + ": " + bodyParts[i].getName());
 		}
 		System.out.println("Heads: " + Head.getCount() + ", Tails: " + Tail.getCount());
+		if(Head.getCount() > Tail.getCount()){
+			System.out.println("You won");
+		} else {
+			System.out.println("You lost");
+		}
     }
 }
 
